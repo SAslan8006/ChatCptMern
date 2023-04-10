@@ -12,7 +12,7 @@ exports.sendToken = (user, statusCode, res) => {
 };
 
 //REGISTER
-exports.registerContoller = async (req, res, next) => {
+exports.registerController = async (req, res, next) => {
   try {
     const { username, email, password } = req.body;
     //exisitng user
