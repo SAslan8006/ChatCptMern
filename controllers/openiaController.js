@@ -10,7 +10,7 @@ exports.summaryController = async (req, res) => {
   try {
     const { text } = req.body;
     const { data } = await openai.createCompletion({
-      model: 'text-davinci-003',
+      model: 'gpt-4',
       prompt: `Summarize this \n${text}`,
       max_tokens: 500,
       temperature: 0.5,
